@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">CarStore</string>
+	<string name="action_settings">Settings</string>
+
+	<!--  car store manager Activity releated strings -->
+	<string name="empty_car_list">No Cars to display</string>
+	<string name="no_serach_result">No Matching Cars found</string>
+	
+	<!-- loading page related -->
+	<string name="loading">Loading...</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	
+	<!-- frame work related dimes -->
+	<dimen name="car_list_divider_height">1dp</dimen>
+	
+	<!-- empty list View -->
+	<dimen name="empty_text_size">12sp</dimen>
+	<dimen name="car_list_empty_text_view_margin_horizontal">32dp</dimen>
+	<dimen name="car_list_margin_bottom">50dp</dimen>
+	
+	<!-- loading page related -->
+	<dimen name="loading_page_Text_size">12sp</dimen>
+	
+	<!-- API Hit count margin -->
+	<dimen name="car_api_hit_count_margin_bottom">10dp</dimen>
+
+</resources>

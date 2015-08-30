@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/carManagerLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/car_list_view_swipe_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ListView
+			android:id="@+id/car_list_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="@color/car_list_divider_color"
+			android:dividerHeight="@dimen/car_list_divider_height"
+			android:paddingBottom="@dimen/car_list_margin_bottom"
+			android:fastScrollEnabled="true"/>
+	</android.support.v4.widget.SwipeRefreshLayout>
+	
+	<TextView
+		android:id="@+id/noCarListToDisplay"
+		style="@style/emptyContentTextView"
+		android:text="@string/empty_car_list"/>
+
+	<TextView
+		android:id="@+id/no_matching_car_found"
+		style="@style/emptyContentTextView"
+		android:text="@string/no_serach_result"
+		android:visibility="gone"
+		android:layout_marginLeft="@dimen/car_list_empty_text_view_margin_horizontal"
+		android:layout_marginRight="@dimen/car_list_empty_text_view_margin_horizontal"/>
+	
+	<!-- Stub view used to show API Hit count -->
+	<ViewStub
+    	android:id="@+id/custom_view_stub"
+    	android:layout_gravity="bottom"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" />
+	
+	<!-- Loading Screen -->
+    <include
+        android:id="@+id/loading_view"
+        layout="@layout/loading_page_layout" />
+
+</FrameLayout>

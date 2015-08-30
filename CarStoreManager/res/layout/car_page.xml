@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/carPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/chevron_left" />
+
+            <TextView
+                android:id="@+id/carTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/carPhoto"
+                android:paddingLeft="10dp"
+                android:textColor="#91000000"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/carRating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/carPhoto"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/carRatingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/carTitle"
+                android:layout_toRightOf="@id/carRating"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carRatingText"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/carPhoto"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/car_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Color : "
+                    android:textAllCaps="true"
+                    android:textColor="#91000000"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/car_color_value"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="visible"
+                    android:layout_alignRight="@+id/car_color"
+                  	android:layout_alignParentRight="true"
+                    android:background="@color/Black" />
+
+                <TextView
+                    android:id="@+id/car_cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/car_color"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#91000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/car_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/car_color_value"
+                    android:layout_below="@id/car_color"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#91000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/car_abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/car_cc"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#91000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/car_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/car_type"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#91000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Description -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/carDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Orchid"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="User Demographic"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/city_list"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/city_list"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/carShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#42000000"
+                android:onClick="Share"
+                android:text="SHARE"
+                android:textAllCaps="true"
+                android:textColor="#2175C8"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/QuikrLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Sms"
+                android:layout_alignParentRight="true"
+                android:background="#42000000"
+                android:text="LINK"
+                android:textAllCaps="true"
+                android:textColor="#2175C8"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/carShare"
+                android:layout_marginTop="10dp"
+                android:background="#42000000"
+                android:onClick="Back"
+                android:text="Back"
+                android:textAllCaps="true"
+                android:textColor="#2175C8"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/QuikrLink"
+                android:layout_marginTop="10dp"
+                android:background="#42000000"
+                android:onClick="Sms"
+                android:text="SMS"
+                android:textAllCaps="true"
+                android:textColor="#2175C8"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

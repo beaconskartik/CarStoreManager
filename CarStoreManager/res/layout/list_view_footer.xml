@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/car_api_hit_count_margin_bottom"
+    android:paddingBottom="@dimen/car_api_hit_count_margin_bottom"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView 
+        android:text="No. of API hits : " 
+        android:id="@+id/apihit" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="14dip" 
+        android:textStyle="bold" 
+        android:layout_marginRight="5dip" />
+    
+     <TextView 
+        android:text="Cars Count : " 
+        android:layout_below="@id/apihit"
+        android:id="@+id/carscount" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="14dip" 
+        android:textStyle="bold" 
+        android:layout_marginRight="5dip" />
+     
+</RelativeLayout> 

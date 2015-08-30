@@ -1,0 +1,36 @@
+<resources>
+
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+	-->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+		-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	
+	<!-- empty content view -->
+	<style name="emptyContentTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/car_list_view_background_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">@dimen/empty_text_size</item>
+        <item name="android:visibility">gone</item>
+        <item name ="android:layout_marginLeft">@dimen/car_list_empty_text_view_margin_horizontal</item>
+        <item name ="android:layout_marginRight">@dimen/car_list_empty_text_view_margin_horizontal</item>
+    </style>
+    
+	<style name="loadingPageStyle" parent="@android:style/Widget.ProgressBar.Small.Inverse">
+    </style>
+
+</resources>
